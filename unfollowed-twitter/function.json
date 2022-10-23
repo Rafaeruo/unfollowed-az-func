@@ -1,0 +1,38 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "*/30 * * * * *"
+    },
+    {
+      "type": "blob",
+      "direction": "in",
+      "name": "currentDiff",
+      "path": "unfollowed-twitter/diff.json",
+      "connection": "rg1ba62_STORAGE"
+    },
+    {
+      "type": "blob",
+      "direction": "in",
+      "name": "currentResults",
+      "path": "unfollowed-twitter/result.json",
+      "connection": "rg1ba62_STORAGE"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "resultsBlob",
+      "path": "unfollowed-twitter/result.json",
+      "connection": "rg1ba62_STORAGE"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "diffBlob",
+      "path": "unfollowed-twitter/diff.json",
+      "connection": "rg1ba62_STORAGE"
+    }
+  ]
+}
